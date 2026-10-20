@@ -1,0 +1,22 @@
+[data-theme=dark]{--accent:#ec4899;--accent2:#fbbf24}
+[data-theme=light]{--accent:#be185d;--accent2:#b45309}
+.hero{display:grid;gap:12px;grid-template-columns:1.2fr 1fr}
+@media(max-width:640px){.hero{grid-template-columns:1fr}}
+.count{font-size:2.6rem;font-weight:900;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+.stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+.stat div{background:var(--surface2);border:1px solid var(--border);border-radius:14px;padding:10px;text-align:center}
+.stat b{display:block;font-size:1.15rem}.stat span{font-size:.72rem;color:var(--muted);text-transform:uppercase}
+.sec{margin:16px 0 6px;font-weight:800;color:var(--accent2);text-transform:uppercase;font-size:.78rem;letter-spacing:.08em;display:flex;justify-content:space-between}
+.chk{display:flex;gap:12px;align-items:center;padding:10px 4px;border-bottom:1px solid var(--border)}
+.chk.done .l{text-decoration:line-through;color:var(--muted)}.chk .l{flex:1;overflow-wrap:anywhere}
+.cat{padding:12px 0;border-bottom:1px solid var(--border)}
+.cat .h{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:6px}
+.exp{display:flex;gap:8px;align-items:center;padding:8px 0;border-bottom:1px dashed var(--border)}
+.exp .n{flex:1 1 0;min-width:0;overflow-wrap:anywhere}
+.alert{border-radius:12px;padding:10px 12px;font-size:.9rem;margin:10px 0;border:1px solid var(--border);background:var(--surface2)}
+.alert.warn{border-color:var(--warn);color:var(--warn)}.alert.bad{border-color:var(--bad);color:var(--bad)}.alert.ok{border-color:var(--ok);color:var(--ok)}
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.filters button{border:1px solid var(--border);background:var(--bg2);border-radius:99px;padding:6px 14px;cursor:pointer;font-weight:700;color:var(--muted);min-height:36px}
+.filters button.on{background:var(--accent);color:#fff;border-color:transparent}
+.guest{display:grid;grid-template-columns:1fr auto;gap:6px 10px;padding:10px 0;border-bottom:1px solid var(--border);align-items:center}
+.guest .n{font-weight:700;overflow-wrap:anywhere}
