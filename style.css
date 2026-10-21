@@ -1,22 +1,23 @@
-[data-theme=dark]{--accent:#ec4899;--accent2:#fbbf24}
-[data-theme=light]{--accent:#be185d;--accent2:#b45309}
-.hero{display:grid;gap:12px;grid-template-columns:1.2fr 1fr}
+/* Wedding Planner - elegant maroon + champagne on the shared design system */
+[data-theme=dark]{--bg:#130f12;--bg2:#1a1519;--surface:#1f191e;--surface2:#282128;--border:#352b31;--accent:#fb7185;--accent2:#fbbf24;--muted:#b3a6ad}
+[data-theme=light]{--bg:#faf7f4;--bg2:#f3ede7;--surface:#ffffff;--surface2:#f7f1ec;--border:#e9ded6;--text:#241a1e;--muted:#7a6a70;--accent:#be123c;--accent2:#d97706}
+h2,h3,.brand,.count{font-family:Georgia,'Noto Serif','Noto Serif Devanagari',serif;letter-spacing:-.01em}
+.hero{display:grid;gap:14px;grid-template-columns:1.2fr 1fr}
 @media(max-width:640px){.hero{grid-template-columns:1fr}}
-.count{font-size:2.6rem;font-weight:900;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+.count{font-size:2.8rem;font-weight:900;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.05}
 .stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
-.stat div{background:var(--surface2);border:1px solid var(--border);border-radius:14px;padding:10px;text-align:center}
-.stat b{display:block;font-size:1.15rem}.stat span{font-size:.72rem;color:var(--muted);text-transform:uppercase}
-.sec{margin:16px 0 6px;font-weight:800;color:var(--accent2);text-transform:uppercase;font-size:.78rem;letter-spacing:.08em;display:flex;justify-content:space-between}
-.chk{display:flex;gap:12px;align-items:center;padding:10px 4px;border-bottom:1px solid var(--border)}
+.stat div{background:var(--surface2);border:1px solid var(--border);border-radius:14px;padding:12px 8px;text-align:center}
+.stat b{display:block;font-size:1.2rem;font-variant-numeric:tabular-nums}.stat span{font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:700}
+.sec{margin:18px 0 8px;font-weight:800;color:var(--accent);text-transform:uppercase;font-size:.74rem;letter-spacing:.1em;display:flex;justify-content:space-between;font-family:var(--font)}
+.chk{display:flex;gap:12px;align-items:center;padding:11px 4px;border-bottom:1px solid var(--border)}
 .chk.done .l{text-decoration:line-through;color:var(--muted)}.chk .l{flex:1;overflow-wrap:anywhere}
-.cat{padding:12px 0;border-bottom:1px solid var(--border)}
-.cat .h{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:6px}
+.cat{padding:14px 0;border-bottom:1px solid var(--border)}
+.cat .h{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:8px}
 .exp{display:flex;gap:8px;align-items:center;padding:8px 0;border-bottom:1px dashed var(--border)}
 .exp .n{flex:1 1 0;min-width:0;overflow-wrap:anywhere}
-.alert{border-radius:12px;padding:10px 12px;font-size:.9rem;margin:10px 0;border:1px solid var(--border);background:var(--surface2)}
-.alert.warn{border-color:var(--warn);color:var(--warn)}.alert.bad{border-color:var(--bad);color:var(--bad)}.alert.ok{border-color:var(--ok);color:var(--ok)}
-.filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
-.filters button{border:1px solid var(--border);background:var(--bg2);border-radius:99px;padding:6px 14px;cursor:pointer;font-weight:700;color:var(--muted);min-height:36px}
-.filters button.on{background:var(--accent);color:#fff;border-color:transparent}
-.guest{display:grid;grid-template-columns:1fr auto;gap:6px 10px;padding:10px 0;border-bottom:1px solid var(--border);align-items:center}
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.filters button{border:1px solid var(--border);background:var(--surface);border-radius:99px;padding:7px 15px;cursor:pointer;font-weight:650;color:var(--muted);min-height:36px;transition:all .18s}
+.filters button:hover{color:var(--text)}
+.filters button.on{background:linear-gradient(135deg,var(--accent),color-mix(in srgb,var(--accent) 55%,var(--accent2)));color:var(--on-accent);border-color:transparent}
+.guest{display:grid;grid-template-columns:1fr auto;gap:6px 10px;padding:12px 0;border-bottom:1px solid var(--border);align-items:center}
 .guest .n{font-weight:700;overflow-wrap:anywhere}

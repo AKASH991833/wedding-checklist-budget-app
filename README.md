@@ -1,44 +1,43 @@
 # Wedding Checklist + Budget Planner
 
-Month-wise wedding checklist, rupee budget tracker and guest list with RSVP.
+A complete planner for Indian weddings: a month-by-month checklist, a budget tracker in rupees, and a guest list with RSVP tracking.
 
 **Live app:** https://akash991833.github.io/wedding-checklist-budget-app/
 
-Free, no sign-up, no ads. Works in the browser, offline after the first visit, and can be installed on your phone (Chrome menu > Add to Home screen / Install app). Everything is saved on your device only.
+Free, no sign-up, no ads. Works in the browser, offline after the first visit, and can be installed on your phone. Everything is saved on your device only.
 
 ## Features
 
-- Countdown to the wedding date
-- 35 ready tasks in 5 stages (6+ months before to wedding day); add, tick, filter and delete your own
-- Budget tracker in Indian rupee format: total budget, per-category plan, expenses, paid / pending, over-budget warnings
-- Guest list with family size, groom/bride side and RSVP status, headcount totals
-- Export Expenses, Guests and Checklist as CSV (opens in Excel / Google Sheets)
-- JSON backup and restore, print view
+- Countdown to the wedding day on the home screen
+- 40+ task checklist organised by timeline (6+ months before to the wedding day), with custom tasks and filters
+- Budget tracker: total budget, category-wise plan vs actual, paid/pending status, over-budget warnings
+- Guest list: family/group entries, headcount, groom's side / bride's side, RSVP status with filters
+- Export: JSON backup and restore, expenses / guests / checklist as CSV (opens in Excel), print
 - Dark and light mode, works offline, installable on phone
 
 ## How to use
 
-1. Home tab: enter names, date and total budget.
-2. Checklist tab: tick tasks as you complete them.
-3. Budget tab: set a plan per category, then add every expense and mark it paid when settled.
-4. Guests tab: add families and update RSVP as replies come.
-5. Backup tab: export CSV or JSON.
+1. On Home, set the couple's names, wedding date and total budget.
+2. Tick tasks in Checklist as you finish them; add your own.
+3. Record every payment in Budget and set a plan per category.
+4. Track invitations and RSVPs in Guests.
+5. Use Backup regularly - the data lives only in this browser.
 
 ## Screenshots
 
-<img src="screenshots/0-home.png" width="240" alt="0-home">
-<img src="screenshots/1-checklist.png" width="240" alt="1-checklist">
-<img src="screenshots/2-budget.png" width="240" alt="2-budget">
-<img src="screenshots/3-guests.png" width="240" alt="3-guests">
-<img src="screenshots/5-light.png" width="240" alt="5-light">
+<img src="screenshots/0-home.png" width="240" alt="Home">
+<img src="screenshots/1-checklist.png" width="240" alt="Checklist">
+<img src="screenshots/2-budget.png" width="240" alt="Budget">
+<img src="screenshots/3-guests.png" width="240" alt="Guests">
+<img src="screenshots/5-light.png" width="240" alt="Light mode">
 
-![desktop](screenshots/4-desktop.png)
+![Desktop view](screenshots/4-desktop.png)
 
 ## Good to know (limits)
 
-- Data is stored only in your browser. Take a backup before changing phone or clearing browser data.
-- Export is CSV (not .xlsx); Excel opens it directly.
-- Checklist tasks are a general Indian-wedding guide; adjust for your family traditions.
+- Data is stored only in your browser (localStorage). Use Backup to move it to another device.
+- Amounts are in Indian rupees (₹) with Indian digit grouping.
+- The default checklist is a general Indian-wedding template; add or remove tasks to fit your ceremony.
 
 ## Run it yourself
 
@@ -50,7 +49,7 @@ cd wedding-checklist-budget-app
 python3 -m http.server 8080
 ```
 
-Plain HTML, CSS and JavaScript. No tracking, no external requests (fonts, scripts and data are all local).
+Plain HTML, CSS and JavaScript. No tracking, no external requests.
 
 ## Privacy
 
